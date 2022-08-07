@@ -1,13 +1,7 @@
-const AddFilter = 'AddFilter';
-const EmptyFilter = 'EmptyFilter';
-const DeleteFilter = 'DeleteFilter';
+export const AddFilter = 'AddFilter';
+export const EmptyFilter = 'EmptyFilter';
+export const DeleteFilter = 'DeleteFilter';
 
-export const addFilter = (filter) => {
-    return ({type: AddFilter, filter})
-} 
-export const deleteFilter = (filter) => {
-return ({type: DeleteFilter, filter})
-} 
-export const emptyFilter = () => {
-    return ({type: EmptyFilter})
-} 
+export const addFilter = (filter) => ({type: AddFilter, filter}) 
+export const deleteFilter = (filter) => ({type: DeleteFilter, filter})
+export const emptyFilter = () => ({type: EmptyFilter})
